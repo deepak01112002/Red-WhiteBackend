@@ -8,6 +8,9 @@ const { BlogModel } = require("./Model/blog.model")
 const { blogRoutes } = require("./Routes/blogRoutes")
 
 const app = express()
+app.use("/",(req,res)=>{
+    res.send("Backend is working")
+})
 app.use(cors())
 app.use(express.json())
 
